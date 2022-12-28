@@ -1,4 +1,4 @@
-import logo from "~/assets/logo/alchemical-tinctures-logo.png";
+import logo from "~/assets/logo/alchemical-tinctures-logo.svg";
 
 export default function Index() {
   return (
