@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useLocation,
 } from "@remix-run/react";
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
 
@@ -31,13 +32,14 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  const location = useLocation();
   const { gaTrackingId } = useLoaderData<typeof loader>();
 
   useEffect(() => {
     if (gaTrackingId?.length) {
       gtag.pageview(location.pathname, gaTrackingId);
     }
-  }, [gaTrackingId]);
+  }, [location, gaTrackingId]);
 
   return (
     <html lang="en">
