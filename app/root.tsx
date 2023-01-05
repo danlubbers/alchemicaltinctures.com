@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -6,10 +6,19 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
+
+import { useEffect } from "react";
+import * as gtag from "~/utils/gtags.client";
 
 import styles from "./tailwind.css";
+
+// Load the GA tracking id from the .env
+export const loader = async () => {
+  return json({ gaTrackingId: process.env.GA_TRACKING_ID });
+};
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
@@ -22,6 +31,14 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  const { gaTrackingId } = useLoaderData<typeof loader>();
+
+  useEffect(() => {
+    if (gaTrackingId?.length) {
+      gtag.pageview(location.pathname, gaTrackingId);
+    }
+  }, [gaTrackingId]);
+
   return (
     <html lang="en">
       <head>
@@ -29,6 +46,26 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full bg-grey">
+        <>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+          />
+          <script
+            async
+            id="gtag-init"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaTrackingId}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+            }}
+          />
+        </>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
