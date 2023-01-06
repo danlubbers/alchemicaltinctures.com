@@ -42,12 +42,12 @@ export default function App() {
   }, [location, gaTrackingId]);
 
   return (
-    <html lang="en">
+    <html lang="en" className="w-full flex justify-center">
       <head>
         <Meta />
         <Links />
       </head>
-      <body className="h-full bg-grey">
+      <body className="h-full max-w-7xl bg-grey">
         <>
           <script
             async
