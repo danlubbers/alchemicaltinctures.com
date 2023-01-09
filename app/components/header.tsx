@@ -7,7 +7,11 @@ export default function Header() {
       <nav className="w-full h-1/8 mt-8 px-10 grid grid-cols-3 text-blue">
         <ul className="flex justify-center">
           <li>
-            <Link prefetch="intent" to="/learn">
+            <Link
+              className="hover:text-blueHover"
+              prefetch="intent"
+              to="/learn"
+            >
               Learn
             </Link>
           </li>
@@ -21,7 +25,11 @@ export default function Header() {
         </Link>
         <ul className="flex justify-center">
           <li>
-            <Link prefetch="intent" to="/products/turkey-tails">
+            <Link
+              className="hover:text-blueHover"
+              prefetch="intent"
+              to="/products/turkey-tails"
+            >
               Products
             </Link>
           </li>

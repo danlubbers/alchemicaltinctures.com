@@ -9,7 +9,7 @@ module.exports = {
       grey: "#111211",
       green: "#2e755b",
       blue: "#038ca1",
-      hover: "#05b5d0",
+      blueHover: "#05b5d0",
       brown: "#9c7a14",
     },
     extend: {},

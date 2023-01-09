@@ -545,12 +545,12 @@ video {
   margin-top: 1rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -640,6 +640,11 @@ video {
 .text-brown {
   --tw-text-opacity: 1;
   color: rgb(156 122 20 / var(--tw-text-opacity));
+}
+
+.hover\:text-blueHover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(5 181 208 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
