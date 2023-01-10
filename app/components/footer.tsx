@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="w-full absolute bottom-0 mb-4 hidden md:flex left-0 justify-center text-blue text-xs">
+    <div className="w-full my-4 relative sm:absolute bottom-0 left-0 text-center text-blue text-xs">
       <p>
         © {new Date().getFullYear()} | Site built by{" "}
         <a

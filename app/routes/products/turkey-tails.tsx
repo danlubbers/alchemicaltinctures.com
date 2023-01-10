@@ -1,6 +1,6 @@
 export default function TurkeyTails() {
   return (
-    <div className="w-full h-1/2  px-10 flex flex-col justify-center items-center">
+    <div className="w-full h-1/2 px-10 flex flex-col justify-center items-center">
       <p className="mt-6 text-brown">
         All of the Turkey Tails foraged are away from major interstates, roads
         or highways and found in dense forested areas where the climate is

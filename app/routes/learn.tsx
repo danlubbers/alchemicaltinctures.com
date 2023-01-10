@@ -1,6 +1,6 @@
 import { Outlet } from "@remix-run/react";
 
-export default function Products() {
+export default function Learn() {
   return (
     <>
       <Outlet />

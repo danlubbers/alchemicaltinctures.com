@@ -15,6 +15,8 @@ import { useEffect } from "react";
 import * as gtag from "~/utils/gtags.client";
 
 import styles from "./tailwind.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 // Load the GA tracking id from the .env
 export const loader = async () => {
@@ -68,7 +70,9 @@ export default function App() {
             }}
           />
         </>
+        <Header />
         <Outlet />
+        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

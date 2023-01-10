@@ -4,13 +4,13 @@ import logo from "~/assets/logo/alchemical-tinctures-logo.svg";
 export default function Header() {
   return (
     <>
-      <nav className="w-full h-1/8 mt-8 px-10 grid grid-cols-3 text-blue">
-        <ul className="flex justify-center">
+      <nav className="w-full h-1/8 mt-6 px-10 grid grid-cols-3 text-blue">
+        <ul className="pt-4 pr-10 flex justify-end">
           <li>
             <Link
               className="hover:text-blueHover"
               prefetch="intent"
-              to="/learn"
+              to="/learn/turkey-tails"
             >
               Learn
             </Link>
@@ -23,7 +23,7 @@ export default function Header() {
         >
           <img src={logo} alt="alchemical tinctures" width="150" />
         </Link>
-        <ul className="flex justify-center">
+        <ul className="pt-4 pl-10 flex justify-start">
           <li>
             <Link
               className="hover:text-blueHover"
@@ -34,8 +34,8 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <h1 className="mt-4 col-start-1 col-end-4 text-center text-blue">
-          Small batch & locally sourced Turkey Tails
+        <h1 className="mt-4 col-start-1 col-end-4 text-center text-blue text-xs">
+          Small batch, locally sourced fungi
         </h1>
       </nav>
     </>
