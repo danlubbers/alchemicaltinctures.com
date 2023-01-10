@@ -11,6 +11,7 @@ module.exports = {
       blue: "#038ca1",
       blueHover: "#05b5d0",
       brown: "#9c7a14",
+      brownHover: "#d3a51a",
     },
     extend: {},
   },

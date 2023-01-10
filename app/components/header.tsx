@@ -23,7 +23,7 @@ export default function Header() {
         >
           <img src={logo} alt="alchemical tinctures" width="150" />
         </Link>
-        <ul className="pt-4 pl-10 flex justify-start">
+        <ul className="pt-4 pl-10 flex justify-between">
           <li>
             <Link
               className="hover:text-blueHover"
@@ -33,8 +33,17 @@ export default function Header() {
               Products
             </Link>
           </li>
+          {/* <li>
+            <Link
+              className="hover:text-blueHover"
+              prefetch="intent"
+              to="/contact"
+            >
+              Contact
+            </Link>
+          </li> */}
         </ul>
-        <h1 className="mt-4 col-start-1 col-end-4 text-center text-blue text-xs">
+        <h1 className="mt-4 col-start-1 col-end-4 text-center text-blue text-sm">
           Small batch, locally sourced fungi
         </h1>
       </nav>
