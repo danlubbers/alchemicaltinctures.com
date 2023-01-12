@@ -32,6 +32,19 @@ export default function TurkeyTails() {
             <li>Promotes digestive and gastrointestinal health.</li>
             <li>Supports an engaged and balanced immune response.</li>
           </ul>
+          <div className="mt-10 text-brown">
+            <p>1fl oz = $20</p>
+            <p>2fl oz = $35</p>
+            <p className="mt-4 md:mt-2 text-blue text-sm">
+              Sold locally ( Web sales not currently setup ):{" "}
+              <a
+                className="text-blueHover hover:text-blueHover lg:text-blue"
+                href="mailto:info@alchemicaltinctures.com?subject=Mailed from alchemicaltinctures.com"
+              >
+                info@alchemicaltinctures.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <div>
@@ -46,7 +59,7 @@ export default function TurkeyTails() {
           During the maceration process, each jar sits atop speakers playing
           various
           <a
-            className="hover:text-brownHover text-brownHover md:text-brown"
+            className="hover:text-brownHover text-brownHover lg:text-brown"
             href="https://meditativemind.org/benefits-of-music-based-on-7-solfeggio-frequencies/"
             target="_blank"
             rel="norel noreferrer"
@@ -56,7 +69,7 @@ export default function TurkeyTails() {
           </a>
           based on the scientific research by
           <a
-            className="hover:text-brownHover text-brownHover md:text-brown"
+            className="hover:text-brownHover text-brownHover lg:text-brown"
             href="https://thewellnessenterprise.com/emoto/"
             target="_blank"
             rel="norel noreferrer"
@@ -69,7 +82,7 @@ export default function TurkeyTails() {
         <p className="mt-6 text-center text-brown text-sm">
           Learn more about the benefits of
           <Link
-            className="hover:text-brownHover text-brownHover md:text-brown"
+            className="hover:text-brownHover text-brownHover lg:text-brown"
             to="/learn/turkey-tails"
           >
             {" "}

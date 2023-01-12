@@ -569,6 +569,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -778,9 +782,20 @@ video {
   color: rgb(211 165 26 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:text-brown {
+    --tw-text-opacity: 1;
+    color: rgb(156 122 20 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .md\:grid-cols-1 {
@@ -822,5 +837,15 @@ video {
 
   .lg\:self-start {
     align-self: flex-start;
+  }
+
+  .lg\:text-brown {
+    --tw-text-opacity: 1;
+    color: rgb(156 122 20 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-blue {
+    --tw-text-opacity: 1;
+    color: rgb(3 140 161 / var(--tw-text-opacity));
   }
 }
