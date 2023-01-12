@@ -49,7 +49,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full max-w-7xl bg-grey">
+      <body className="h-full max-w-6xl bg-grey">
         <>
           <script
             async
