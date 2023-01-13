@@ -32,7 +32,15 @@ export default function TurkeyTails() {
             <li>Promotes digestive and gastrointestinal health.</li>
             <li>Supports an engaged and balanced immune response.</li>
           </ul>
-          <div className="mt-10 text-brown">
+          <p className="mt-4 text-center text-brown text-xs">
+            <Link
+              className="hover:text-brownHover text-brownHover lg:text-brown"
+              to="/learn/turkey-tails"
+            >
+              * Learn more about the benefits of Turkey Tails *
+            </Link>
+          </p>
+          <div className="mt-6 text-brown">
             <p>1fl oz = $20</p>
             <p>2fl oz = $35</p>
             <p className="mt-4 md:mt-2 text-blue text-sm">
@@ -49,11 +57,12 @@ export default function TurkeyTails() {
       </div>
       <div>
         <p className="mt-6 text-brown">
-          This tincture is created from wild foraged fruiting bodies of trametes
-          versicolor and created using the double extraction process that
-          involves a 6 week alcohol maceration in 100 proof "gluten free" vodka
-          followed by an 8 hour hot water decoction using spring water for
-          optimal extraction of both alcohol and water soluble constituents.
+          This tincture is created from wild foraged fruiting bodies of{" "}
+          <em>trametes versicolor</em> and created using the double extraction
+          process that involves a 6 week alcohol maceration in 100 proof "gluten
+          free" vodka followed by an 8 hour hot water decoction using spring
+          water for optimal extraction of both alcohol and water soluble
+          constituents.
         </p>
         <p className="mt-6 text-brown">
           During the maceration process, each jar sits atop speakers playing
@@ -77,17 +86,6 @@ export default function TurkeyTails() {
             {" "}
             Dr. Masaru Emoto’s theories on “Water Consciousness.”{" "}
           </a>
-        </p>
-
-        <p className="mt-6 text-center text-brown text-sm">
-          Learn more about the benefits of
-          <Link
-            className="hover:text-brownHover text-brownHover lg:text-brown"
-            to="/learn/turkey-tails"
-          >
-            {" "}
-            Turkey Tails
-          </Link>
         </p>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import waterfallProducts from "~/assets/images/alchemical-tinctures-upper-falls.jpg";
 import snailFungi from "~/assets/images/snail-eating-mushroom.jpg";
 import turkeyTails from "~/assets/images/turkey-tails-rrg.jpg";
+import mossBottle from "~/assets/images/alchemical-tinctures-moss-1fl-oz.jpg";
 
 export default function Index() {
   return (
@@ -19,7 +20,7 @@ export default function Index() {
       </p>
       <img
         className="mt-8 rounded-lg self-center"
-        src={waterfallProducts}
+        src={mossBottle}
         alt="Alchemical Tinctures bottles beneath Waterfall"
       />
       <p className="mt-6 text-brown">
