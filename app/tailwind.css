@@ -419,6 +419,25 @@ video {
   display: none;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+}
+
+a:hover {
+  color: #05b5d0;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -531,6 +550,10 @@ video {
 
 .col-end-4 {
   grid-column-end: 4;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .my-4 {
@@ -657,6 +680,14 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(17 18 17 / var(--tw-bg-opacity));
@@ -711,6 +742,10 @@ video {
 .text-brownHover {
   --tw-text-opacity: 1;
   color: rgb(211 165 26 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .hover\:text-blueHover:hover {
