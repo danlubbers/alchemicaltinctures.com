@@ -4,7 +4,7 @@ export default function Footer() {
       <p>
         © {new Date().getFullYear()} | Site built by{" "}
         <a
-          className="hover:text-blueHover text-blueHover md:text-blue"
+          className="text-blueHover md:text-blue"
           href="https://danlubbers.com"
           target="_blank"
           rel="noreferrer"

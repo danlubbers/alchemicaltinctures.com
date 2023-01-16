@@ -4,7 +4,8 @@ import oneOunceBottle from "~/assets/images/alchemical-tinctures-1fl-oz-8x10.jpg
 
 export default function TurkeyTails() {
   return (
-    <div className="w-full h-1/2 px-10 flex flex-col justify-center items-center">
+    <div className="w-full h-1/2 my-10 px-10 flex flex-col justify-center items-center">
+      <h1 className="text-brown">Turkey Tail Tuncture</h1>
       <p className="w-full my-6 text-brown">
         Turkey Tail <em>(trametes versicolor)</em> is one of the most-studied
         beneficial mushrooms. It invigorates immune cells while simultaneously
@@ -26,7 +27,7 @@ export default function TurkeyTails() {
           </p>
         </div>
         <div className="self-center lg:self-start">
-          <h2 className="mt-6 text-blue">MICROBIOME & IMMUNE SUPPORT:</h2>
+          <h4 className="mt-6 text-blue text">MICROBIOME & IMMUNE SUPPORT:</h4>
           <ul className="text-blue list-disc">
             <li>Supports beneficial microflora in the gut microbiome.</li>
             <li>Promotes digestive and gastrointestinal health.</li>
@@ -46,7 +47,7 @@ export default function TurkeyTails() {
             <p className="mt-4 md:mt-2 text-blue text-sm">
               Sold locally ( Web sales not currently setup ):{" "}
               <a
-                className="text-blueHover hover:text-blueHover lg:text-blue"
+                className="text-blueHover lg:text-blue"
                 href="mailto:info@alchemicaltinctures.com?subject=Mailed from alchemicaltinctures.com"
               >
                 info@alchemicaltinctures.com
