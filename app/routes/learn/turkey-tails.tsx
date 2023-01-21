@@ -2,7 +2,7 @@
 
 export default function TurkeyTails() {
   return (
-    <div className="w-full h-1/2 my-10 px-10 flex flex-col justify-center items-center text-brown">
+    <div className="my-10 flex h-1/2 w-full flex-col items-center justify-center px-10 text-brown">
       <h1 className="text-brown">Benefits of Turkey Tails</h1>
       {/* <img
         className="m-4 rounded-lg self-center"
@@ -11,7 +11,7 @@ export default function TurkeyTails() {
         width={300}
       /> */}
       <div className="mt-8">
-        <ul className="my-4 text-blue list-disc">
+        <ul className="my-4  list-disc  text-blue">
           <li className="my-4">
             <b>Polysaccharides:</b>
             <p className="text-brown">
