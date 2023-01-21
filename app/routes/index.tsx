@@ -5,7 +5,7 @@ import mossBottle from "~/assets/images/alchemical-tinctures-moss-1fl-oz.jpg";
 
 export default function Index() {
   return (
-    <div className="w-full mt-10 px-10 flex flex-col justify-start">
+    <div className="mt-10 flex w-full flex-col justify-start px-10">
       <p className="text-brown">
         I call these “small batch” because this is a fun hobby of mine and the
         purpose was to get enough to boost up my immune system and gut health.
@@ -19,7 +19,7 @@ export default function Index() {
         location where they were harvested as well as the Alchemy Date.
       </p>
       <img
-        className="mt-8 rounded-lg self-center"
+        className="mt-8 self-center rounded-lg"
         src={mossBottle}
         alt="Alchemical Tinctures bottles beneath Waterfall"
       />
@@ -35,19 +35,19 @@ export default function Index() {
         and it’s tied to the outside of my pack so the spores disperse as I
         continue to hike around.
       </p>
-      <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2  gap-x-4 gap-y-8 justify-items-center align-items-center">
+      <div className="align-items-center mt-8 grid w-full grid-cols-1  justify-items-center gap-x-4 gap-y-8 md:grid-cols-2">
         <img
-          className="rounded-lg self-center"
+          className="self-center rounded-lg"
           src={snailFungi}
           alt="snail eating mushroom"
         />
         <img
-          className="rounded-lg self-center"
+          className="self-center rounded-lg"
           src={turkeyTails}
           alt="snail eating mushroom"
         />
       </div>
-      <p className="mt-8 text-center text-blue text-sm">
+      <p className="mt-8 text-center text-sm text-blue">
         "Life is too short not to create something with every breath we draw" ~
         Maynard James Keenan
       </p>

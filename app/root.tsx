@@ -44,7 +44,7 @@ export default function App() {
   }, [location, gaTrackingId]);
 
   return (
-    <html lang="en" className="w-full flex justify-center">
+    <html lang="en" className="flex w-full justify-center">
       <head>
         <Meta />
         <Links />
