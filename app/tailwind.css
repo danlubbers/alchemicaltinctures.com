@@ -620,6 +620,10 @@ a:hover {
   max-width: 72rem;
 }
 
+.border-separate {
+  border-collapse: separate;
+}
+
 .list-disc {
   list-style-type: disc;
 }

@@ -40,13 +40,13 @@ export default function TurkeyTails() {
               className="text-brownHover hover:text-brownHover lg:text-brown"
               to="/learn/turkey-tails"
             >
-              * Learn more about the benefits of Turkey Tails *
+              Learn more about the benefits of Turkey Tails
             </Link>
           </p>
         </div>
       </div>
       <div className="my-4 flex w-full flex-col items-center md:flex-row  md:justify-around">
-        <div className="my-4 w-full rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
+        <div className="my-4 w-full border-separate rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
           <h5 className="text-center">*SOLD OUT*</h5>
           <p className="my-2 text-sm">
             Location: <span className="text-brown">Red River Gorge, KY</span>
