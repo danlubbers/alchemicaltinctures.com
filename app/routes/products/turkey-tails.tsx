@@ -13,8 +13,8 @@ export default function TurkeyTails() {
         for our probiotic microflora, it has also shown to improve the gut
         microbiome.
       </p>
-      <div className="flex w-full flex-col items-center justify-around md:px-28 lg:flex-row">
-        <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col md:px-10 lg:flex-row">
+        <div className="flex w-full flex-col pr-0 lg:pr-6">
           <img
             className="self-center rounded-3xl"
             src={oneOunceBottle}
@@ -27,7 +27,9 @@ export default function TurkeyTails() {
           </p>
         </div>
         <div className="self-center lg:self-start">
-          <h4 className="text mt-6 text-blue">MICROBIOME & IMMUNE SUPPORT:</h4>
+          <h4 className="text mt-6 text-blue lg:mt-0">
+            MICROBIOME & IMMUNE SUPPORT:
+          </h4>
           <ul className="list-disc text-blue">
             <li>Supports beneficial microflora in the gut microbiome.</li>
             <li>Promotes digestive and gastrointestinal health.</li>
@@ -41,20 +43,47 @@ export default function TurkeyTails() {
               * Learn more about the benefits of Turkey Tails *
             </Link>
           </p>
-          <div className="mt-6 text-brown">
+        </div>
+      </div>
+      <div className="my-4 flex w-full flex-col items-center md:flex-row  md:justify-around">
+        <div className="my-4 w-full rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
+          <h5 className="text-center">*SOLD OUT*</h5>
+          <p className="my-2 text-sm">
+            Location: <span className="text-brown">Red River Gorge, KY</span>
+          </p>
+          <p className="my-2 text-sm">
+            Alchemy Date: <span className="text-brown">10-28-2022</span>
+          </p>
+          <div className="flex justify-around text-brown">
             <p>1fl oz = $20</p>
             <p>2fl oz = $35</p>
-            <p className="mt-4 text-sm text-blue md:mt-2">
-              Sold locally ( Web sales not currently setup ):{" "}
-              <a
-                className="text-blueHover lg:text-blue"
-                href="mailto:info@alchemicaltinctures.com?subject=Mailed from alchemicaltinctures.com"
-              >
-                info@alchemicaltinctures.com
-              </a>
-            </p>
           </div>
         </div>
+        <div className="my-4 w-full rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
+          <h5 className="text-center">Currently being sold</h5>
+          <p className="my-2 text-sm">
+            Location:{" "}
+            <span className="text-brown">Hoosier National Forest, IN</span>
+          </p>
+          <p className="my-2 text-sm">
+            Alchemy Date: <span className="text-brown">12-5-2022</span>
+          </p>
+          <div className="flex justify-around text-brown">
+            <p>1fl oz = $20</p>
+            <p>2fl oz = $35</p>
+          </div>
+        </div>
+      </div>
+      <div className="text-brown">
+        <p className="mt-4 text-center text-sm text-blue md:mt-2">
+          Sold locally ( Web sales not currently setup ):{" "}
+          <a
+            className="text-blueHover lg:text-blue"
+            href="mailto:info@alchemicaltinctures.com?subject=Mailed from alchemicaltinctures.com"
+          >
+            info@alchemicaltinctures.com
+          </a>
+        </p>
       </div>
       <div>
         <p className="mt-6 text-brown">
