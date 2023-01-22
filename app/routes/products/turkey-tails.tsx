@@ -60,7 +60,7 @@ export default function TurkeyTails() {
           </div>
         </div>
         <div className="my-4 w-full rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
-          <h5 className="text-center">Currently being sold</h5>
+          <h5 className="text-center">Currently In Stock</h5>
           <p className="my-2 text-sm">
             Location:{" "}
             <span className="text-brown">Hoosier National Forest, IN</span>
