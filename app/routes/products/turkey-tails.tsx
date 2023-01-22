@@ -26,7 +26,7 @@ export default function TurkeyTails() {
             healing journey *
           </p>
         </div>
-        <div className="self-center lg:self-start">
+        <div className="mt-0 self-center lg:mt-10 lg:self-start">
           <h4 className="text mt-6 text-blue lg:mt-0">
             MICROBIOME & IMMUNE SUPPORT:
           </h4>
@@ -54,6 +54,10 @@ export default function TurkeyTails() {
           <p className="my-2 text-sm">
             Alchemy Date: <span className="text-brown">10-28-2022</span>
           </p>
+          <div className="flex justify-around">
+            <p className="text-center">0 left</p>
+            <p className="text-center">0 left</p>
+          </div>
           <div className="flex justify-around text-brown">
             <p>1fl oz = $20</p>
             <p>2fl oz = $35</p>
@@ -68,6 +72,10 @@ export default function TurkeyTails() {
           <p className="my-2 text-sm">
             Alchemy Date: <span className="text-brown">12-5-2022</span>
           </p>
+          <div className="flex justify-around">
+            <p className="text-center">6 left</p>
+            <p className="text-center">4 left</p>
+          </div>
           <div className="flex justify-around text-brown">
             <p>1fl oz = $20</p>
             <p>2fl oz = $35</p>
