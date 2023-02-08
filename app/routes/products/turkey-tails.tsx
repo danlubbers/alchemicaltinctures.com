@@ -73,8 +73,8 @@ export default function TurkeyTails() {
             Alchemy Date: <span className="text-brown">12-5-2022</span>
           </p>
           <div className="flex justify-around">
-            <p className="text-center">4 left</p>
-            <p className="text-center">4 left</p>
+            <p className="text-center">3 left</p>
+            <p className="text-center">3 left</p>
           </div>
           <div className="flex justify-around text-brown">
             <p>1fl oz = $20</p>
