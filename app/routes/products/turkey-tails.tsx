@@ -1,8 +1,16 @@
-import { Link } from "@remix-run/react";
+import { json } from "@remix-run/node";
+import { Link, useLoaderData } from "@remix-run/react";
 import oneOunceBottle from "~/assets/images/alchemical-tinctures-1fl-oz-8x10.jpg";
 // import oneOunceBottle from "~/assets/images/alchemical-tinctures-1fl-oz.png";
+import products from "~/data/products.json";
+
+export function loader() {
+  return json(products);
+}
 
 export default function TurkeyTails() {
+  const data = useLoaderData<typeof loader>();
+
   return (
     <div className="my-10 flex h-1/2 w-full flex-col items-center justify-center px-10">
       <h1 className="text-brown">Turkey Tail Tuncture</h1>
@@ -45,42 +53,40 @@ export default function TurkeyTails() {
           </p>
         </div>
       </div>
-      <div className="my-4 flex w-full flex-col items-center md:flex-row  md:justify-around">
-        <div className="my-4 w-full border-separate rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
-          <h5 className="text-center">*SOLD OUT*</h5>
-          <p className="my-2 text-sm">
-            Location: <span className="text-brown">Red River Gorge, KY</span>
-          </p>
-          <p className="my-2 text-sm">
-            Alchemy Date: <span className="text-brown">10-28-2022</span>
-          </p>
-          <div className="flex justify-around">
-            <p className="text-center">0 left</p>
-            <p className="text-center">0 left</p>
-          </div>
-          <div className="flex justify-around text-brown">
-            <p>1fl oz = $20</p>
-            <p>2fl oz = $35</p>
-          </div>
-        </div>
-        <div className="my-4 w-full rounded-xl p-4 text-blue outline outline-1 sm:w-2/3 md:w-1/3">
-          <h5 className="text-center">Currently In Stock</h5>
-          <p className="my-2 text-sm">
-            Location:{" "}
-            <span className="text-brown">Hoosier National Forest, IN</span>
-          </p>
-          <p className="my-2 text-sm">
-            Alchemy Date: <span className="text-brown">12-5-2022</span>
-          </p>
-          <div className="flex justify-around">
-            <p className="text-center">3 left</p>
-            <p className="text-center">3 left</p>
-          </div>
-          <div className="flex justify-around text-brown">
-            <p>1fl oz = $20</p>
-            <p>2fl oz = $35</p>
-          </div>
-        </div>
+      <div className="my-4 grid w-full grid-cols-1 justify-items-center md:grid-cols-2">
+        {data.map((product, idx) => {
+          return (
+            <div
+              key={idx}
+              className="my-4 w-full border-separate rounded-xl p-4 text-blue outline outline-1 sm:w-2/3"
+            >
+              <h5 className="text-center">{product.status}</h5>
+              <p className="my-2 text-sm">
+                Location: <span className="text-brown">{product.location}</span>
+              </p>
+              <p className="my-2 text-sm">
+                Alchemy Date:{" "}
+                <span className="text-brown">{product.alchemyDate}</span>
+              </p>
+              <div className="flex justify-around">
+                <p className="text-center">
+                  {product.oneOunceAvailable
+                    ? `${product.oneOunceAvailable} left`
+                    : null}
+                </p>
+                <p className="text-center">
+                  {product.twoOunceAvailable
+                    ? `${product.twoOunceAvailable} left`
+                    : null}
+                </p>
+              </div>
+              <div className="flex justify-around text-brown">
+                <p>1fl oz = $20</p>
+                <p>2fl oz = $35</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <div className="text-brown">
         <p className="mt-4 text-center text-sm text-blue md:mt-2">

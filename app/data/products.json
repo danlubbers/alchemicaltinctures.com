@@ -1,0 +1,23 @@
+[
+  {
+    "status": "*SOLD OUT*",
+    "location": "Red River Gorge, KY",
+    "alchemyDate": "10-28-2022",
+    "oneOunceAvailable": 0,
+    "twoOunceAvailable": 0
+  },
+  {
+    "status": "Currently In Stock",
+    "location": "Hoosier National Forest, IN",
+    "alchemyDate": "12-05-2022",
+    "oneOunceAvailable": 3,
+    "twoOunceAvailable": 2
+  },
+  {
+    "status": "Coming soon...",
+    "location": "Clermont, KY",
+    "alchemyDate": "02-10-2023",
+    "oneOunceAvailable": null,
+    "twoOunceAvailable": null
+  }
+]
