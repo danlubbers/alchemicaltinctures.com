@@ -38,9 +38,9 @@ export default function Index() {
           >
             The Inner Warrior Studio
           </a>{" "}
-          during an hour and a half Full Moon Sound journey on February 5, 2023.
-          Various instruments included: crystal and Himalayan singing bowls,
-          flute, gong, didge, tuning fork, chimes, and more.{" "}
+          during an hour and a half <em>Full Moon Sound Journey</em> on February
+          5, 2023. Various instruments included: crystal and Himalayan singing
+          bowls, flute, gong, didge, tuning fork, chimes, and more.{" "}
         </p>
         <img
           className="mt-8 self-center rounded-lg"
