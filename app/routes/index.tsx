@@ -1,11 +1,54 @@
 import waterfallProducts from "~/assets/images/alchemical-tinctures-upper-falls.jpg";
+import turkeyTailsSoundbath from "~/assets/images/turkey-tails-soundbath.jpg";
 import snailFungi from "~/assets/images/snail-eating-mushroom.jpg";
 import turkeyTails from "~/assets/images/turkey-tails-rrg.jpg";
 import mossBottle from "~/assets/images/alchemical-tinctures-moss-1fl-oz.jpg";
+import { Link } from "@remix-run/react";
 
 export default function Index() {
   return (
     <div className="mt-10 flex w-full flex-col justify-start px-10">
+      <div className="mb-8 flex w-full flex-col items-center text-brown">
+        <h1>Coming soon...</h1>
+        <Link
+          className="text-brownHover hover:text-brownHover lg:text-brown"
+          to="/products/turkey-tails"
+        >
+          <h2>Special Batch: Clermont, KY</h2>
+        </Link>
+        <p className="mt-4">
+          Why is this a special batch you ask? Not only did this batch soak up
+          the normal solfeggio frequencies I expose all of the tinctures too.
+          This batch at the end of the maceration process received and soaked up
+          the healing sounds of Gabriella Gaona and{" "}
+          <a
+            className="text-brownHover hover:text-brownHover lg:text-brown"
+            href="https://thomasorranderson.com/"
+            target="_blank"
+            rel="norel nopener noreferrer"
+          >
+            Thomas Orr Anderson
+          </a>{" "}
+          at{" "}
+          <a
+            className="text-brownHover hover:text-brownHover lg:text-brown"
+            href="https://theinnerwarriorlou.com"
+            target="_blank"
+            rel="norel nopener noreferrer"
+          >
+            The Inner Warrior Studio
+          </a>{" "}
+          during an hour and a half Full Moon Sound journey on February 5, 2023.
+          Various instruments included: crystal and Himalayan singing bowls,
+          flute, gong, didge, tuning fork, chimes, and more.{" "}
+        </p>
+        <img
+          className="mt-8 self-center rounded-lg"
+          src={turkeyTailsSoundbath}
+          alt="Turkey Tails soaking in the healing sounds during a healing sound journey at The Inner Warrior Louisville, KY"
+        />
+      </div>
+
       <p className="text-brown">
         I call these “small batch” because this is a fun hobby of mine and the
         purpose was to get enough to boost up my immune system and gut health.
