@@ -6,6 +6,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
   useLoaderData,
   useLocation,
 } from "@remix-run/react";
@@ -76,6 +77,53 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+      </body>
+    </html>
+  );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  if (caught.status === 404) {
+    return (
+      <html lang="en">
+        <head>
+          <title>Oh no!</title>
+          <Meta />
+          <Links />
+        </head>
+        <body className="w-full bg-grey text-center">
+          <Header />
+          <div className="my-10 flex h-1/2 w-full flex-col items-center justify-center px-10 text-brown">
+            <h1 className="">Status: {caught.status}</h1>
+            <p>You have reached a page that does not exist!</p>
+          </div>
+          <Scripts />
+        </body>
+      </html>
+    );
+  }
+  throw new Error(`Unexpected caught response with status: ${caught.status}`);
+}
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  console.error("*** ERROR ***", error);
+  return (
+    <html lang="en">
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body className="w-full bg-grey text-center">
+        <Header />
+        <div className="my-10 flex h-1/2 w-full flex-col items-center justify-center px-10 text-brown">
+          <h1>Error</h1>
+          <em>{error.message}</em>
+          <p>The stack trace is:</p>
+          <pre>{error.stack}</pre>
+        </div>
+        <Scripts />
       </body>
     </html>
   );
