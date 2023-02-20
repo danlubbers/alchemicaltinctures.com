@@ -689,20 +689,6 @@ a:hover {
   align-self: center;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-visible {
-  overflow: visible;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -759,9 +745,9 @@ a:hover {
   line-height: 1.25rem;
 }
 
-.text-brown {
+.text-error {
   --tw-text-opacity: 1;
-  color: rgb(156 122 20 / var(--tw-text-opacity));
+  color: rgb(188 61 61 / var(--tw-text-opacity));
 }
 
 .text-blue {
@@ -772,6 +758,11 @@ a:hover {
 .text-blueHover {
   --tw-text-opacity: 1;
   color: rgb(5 181 208 / var(--tw-text-opacity));
+}
+
+.text-brown {
+  --tw-text-opacity: 1;
+  color: rgb(156 122 20 / var(--tw-text-opacity));
 }
 
 .text-brownHover {
