@@ -13,6 +13,7 @@ module.exports = {
       blueHover: "#05b5d0",
       brown: "#9c7a14",
       brownHover: "#d3a51a",
+      error: "#bc3d3d",
     },
     extend: {},
   },
