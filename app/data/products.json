@@ -10,14 +10,14 @@
     "status": "Currently In Stock",
     "location": "Hoosier National Forest, IN",
     "alchemyDate": "12-05-2022",
-    "oneOunceAvailable": 2,
-    "twoOunceAvailable": 1
+    "oneOunceAvailable": 1,
+    "twoOunceAvailable": 0
   },
   {
     "status": "Coming soon...",
     "location": "Clermont, KY",
     "alchemyDate": "02-10-2023",
     "oneOunceAvailable": 3,
-    "twoOunceAvailable": 3
+    "twoOunceAvailable": 2
   }
 ]
