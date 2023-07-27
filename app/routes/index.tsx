@@ -9,7 +9,6 @@ export default function Index() {
   return (
     <div className="mt-10 flex w-full flex-col justify-start px-10">
       <div className="mb-8 flex w-full flex-col items-center text-brown">
-        <h1>Coming soon...</h1>
         <Link
           className="text-brownHover hover:text-brownHover lg:text-brown"
           to="/products/turkey-tails"
